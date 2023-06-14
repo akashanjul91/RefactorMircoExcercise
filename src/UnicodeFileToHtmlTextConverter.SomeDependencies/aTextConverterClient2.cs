@@ -11,9 +11,9 @@ namespace TDDMicroExercises.UnicodeFileToHtmlTextConverter.SomeDependencies
 
         public aTextConverterClient2()
         {
-            _textConverter = new UnicodeFileToHtmlTextConverter("anotherFilename.txt");
+            _textConverter = new UnicodeFileToHtmlTextConverter();
 
-            var html = _textConverter.ConvertToHtml();
+            var html = _textConverter.ConvertToHtml("anotherFilename.txt");
         }
 
     }
